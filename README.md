@@ -23,21 +23,21 @@ The following instructions give a high-level overview of the steps required. Mor
 
 3. Place 'GND', '3V3' and +5V' power ports and connect them to the Arduino Nano using the power port and wire tools respectively:
 
-   <img src=".\Images\SchStep3.png" alt="SchStep3" style="zoom:75%;" />
+   <img src=".\Images\SchStep3.png" alt="SchStep3" width="400" />
 
 4. Place three 'LED' symbols and three 'R' (resistor) symbols. Connect the anode (wide side of symbol) of each LED to a resistor. Connect the other side of the resistor to the arduino pins 9, 10 and 11 respectively, then the other side of each LED to ground. Use the 'Label' tool to name each of the wires from the Arduino.
 
 5. Edit the 'Value' field of each resistor, changing it to 100 - the LEDs should now be connected as shown below:
 
-   <img src=".\Images\SchStep5.png" alt="SchStep5" style="zoom:50%;" />
+   <img src=".\Images\SchStep5.png" alt="SchStep5" width="500" />
 
 6. Add three pushbutton switches (SW_Push) to the schematic together with a 10K pull-down resistor for each switch. Add net labels to the 'outputs' of the switches:
 
-   <img src=".\Images\SchStep6.png" alt="SchStep6" style="zoom:45%;" />
+   <img src=".\Images\SchStep6.png" alt="SchStep6" width="800" />
 
 7. Connect lines with the same names as those used on the buttons onto the Arduino pins D2, D3 and D4:
 
-<img src=".\Images\SchStep7.png" alt="SchStep7" style="zoom:50%;" />
+<img src=".\Images\SchStep7.png" alt="SchStep7" width="200" />
 
 #### Adding new libraries
 
@@ -53,7 +53,9 @@ The following instructions give a high-level overview of the steps required. Mor
 
 5. You should now be able to place the HC-SR04 like any other circuit symbol. Connect the HC-SR04 as shown below:
 
-<img src=".\Images\LibStep5.png" alt="LibStep5" style="zoom:15%;" />
+<img src=".\Images\LibStep5.png" alt="LibStep5" width="400" />
+
+#### Assigning footprints to schematic symbols
 
 
 
