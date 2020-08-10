@@ -1,0 +1,185 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title "Desk Guardian"
+Date "2020-08-10"
+Rev ""
+Comp ""
+Comment1 "Ben Adamson"
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L power:GND #PWR?
+U 1 1 5F31EFDB
+P 6000 4500
+F 0 "#PWR?" H 6000 4250 50  0001 C CNN
+F 1 "GND" H 6005 4327 50  0000 C CNN
+F 2 "" H 6000 4500 50  0001 C CNN
+F 3 "" H 6000 4500 50  0001 C CNN
+	1    6000 4500
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR?
+U 1 1 5F31F7F8
+P 6100 2250
+F 0 "#PWR?" H 6100 2100 50  0001 C CNN
+F 1 "+5V" H 6115 2423 50  0000 C CNN
+F 2 "" H 6100 2250 50  0001 C CNN
+F 3 "" H 6100 2250 50  0001 C CNN
+	1    6100 2250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6100 2250 6100 2400
+Wire Wire Line
+	6000 4400 6000 4450
+Wire Wire Line
+	5900 4400 5900 4450
+Wire Wire Line
+	5900 4450 6000 4450
+Connection ~ 6000 4450
+Wire Wire Line
+	6000 4450 6000 4500
+$Comp
+L MCU_Module:Arduino_Nano_v3.x A?
+U 1 1 5F31B7B5
+P 5900 3400
+F 0 "A?" H 6350 4450 50  0000 C CNN
+F 1 "Arduino_Nano_v3.x" H 6650 4350 50  0000 C CNN
+F 2 "Module:Arduino_Nano" H 5900 3400 50  0001 C CIN
+F 3 "http://www.mouser.com/pdfdocs/Gravitech_Arduino_Nano3_0.pdf" H 5900 3400 50  0001 C CNN
+	1    5900 3400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5400 3200 5000 3200
+Wire Wire Line
+	5400 3300 5000 3300
+Text GLabel 5000 3200 0    50   Input ~ 0
+Echo
+Text GLabel 5000 3300 0    50   Output ~ 0
+Trigger
+$Comp
+L Device:LED D?
+U 1 1 5F320B91
+P 3800 3550
+F 0 "D?" H 3900 3650 50  0000 C CNN
+F 1 "LED" H 3700 3650 50  0000 C CNN
+F 2 "" H 3800 3550 50  0001 C CNN
+F 3 "~" H 3800 3550 50  0001 C CNN
+	1    3800 3550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:LED D?
+U 1 1 5F321A49
+P 3800 3800
+F 0 "D?" H 3900 3900 50  0000 C CNN
+F 1 "LED" H 3700 3900 50  0000 C CNN
+F 2 "" H 3800 3800 50  0001 C CNN
+F 3 "~" H 3800 3800 50  0001 C CNN
+	1    3800 3800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:LED D?
+U 1 1 5F321E57
+P 3800 4050
+F 0 "D?" H 3900 4150 50  0000 C CNN
+F 1 "LED" H 3700 4150 50  0000 C CNN
+F 2 "" H 3800 4050 50  0001 C CNN
+F 3 "~" H 3800 4050 50  0001 C CNN
+	1    3800 4050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5F3395DB
+P 4350 4050
+F 0 "R?" V 4250 4100 50  0000 C CNN
+F 1 "100" V 4250 3950 50  0000 C CNN
+F 2 "" V 4280 4050 50  0001 C CNN
+F 3 "~" H 4350 4050 50  0001 C CNN
+	1    4350 4050
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4200 3800 3950 3800
+Wire Wire Line
+	4200 4050 3950 4050
+$Comp
+L power:GND #PWR?
+U 1 1 5F33E95F
+P 3300 4150
+F 0 "#PWR?" H 3300 3900 50  0001 C CNN
+F 1 "GND" H 3305 3977 50  0000 C CNN
+F 2 "" H 3300 4150 50  0001 C CNN
+F 3 "" H 3300 4150 50  0001 C CNN
+	1    3300 4150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3650 4050 3300 4050
+Wire Wire Line
+	3300 4050 3300 4150
+Wire Wire Line
+	3650 3800 3300 3800
+Wire Wire Line
+	3300 3800 3300 4050
+Connection ~ 3300 4050
+Wire Wire Line
+	3650 3550 3300 3550
+Wire Wire Line
+	3300 3550 3300 3800
+Connection ~ 3300 3800
+Wire Wire Line
+	3950 3550 4200 3550
+Wire Wire Line
+	4500 3800 5400 3800
+Wire Wire Line
+	5400 3700 4900 3700
+Wire Wire Line
+	5400 3900 4900 3900
+Wire Wire Line
+	4900 3700 4900 3550
+Wire Wire Line
+	4900 3550 4500 3550
+Wire Wire Line
+	4900 3900 4900 4050
+Wire Wire Line
+	4900 4050 4500 4050
+Text Label 4950 3700 0    50   ~ 0
+GreenLED
+Text Label 4950 3800 0    50   ~ 0
+AmberLED
+Text Label 4950 3900 0    50   ~ 0
+RedLED
+$Comp
+L Device:R R?
+U 1 1 5F3392D8
+P 4350 3800
+F 0 "R?" V 4250 3850 50  0000 C CNN
+F 1 "100" V 4250 3700 50  0000 C CNN
+F 2 "" V 4280 3800 50  0001 C CNN
+F 3 "~" H 4350 3800 50  0001 C CNN
+	1    4350 3800
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5F338E4B
+P 4350 3550
+F 0 "R?" V 4250 3600 50  0000 C CNN
+F 1 "100" V 4250 3450 50  0000 C CNN
+F 2 "" V 4280 3550 50  0001 C CNN
+F 3 "~" H 4350 3550 50  0001 C CNN
+	1    4350 3550
+	0    1    1    0   
+$EndComp
+$EndSCHEMATC
