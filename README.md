@@ -55,8 +55,6 @@ The following instructions give a high-level overview of the steps required. Mor
 
 <img src=".\Images\LibStep5.png" alt="LibStep5" width="400" />
 
-#### Assigning footprints to schematic symbols
-
 
 
 ###### Schematic useful keyboard shortcuts
