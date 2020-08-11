@@ -1,3 +1,4 @@
 (sym_lib_table
   (lib (name HC-SR04)(type Legacy)(uri ${KIPRJMOD}/Libraries/Symbols/HC-SR04.lib)(options "")(descr ""))
+  (lib (name 1825910-6)(type Legacy)(uri ${KIPRJMOD}/Libraries/Symbols/1825910-6.lib)(options "")(descr ""))
 )
